@@ -428,10 +428,13 @@ class DeviceState(object):
                 input_list = GeminiAi.getInputDict()
                 chat = GeminiAi.get_chat()
                 view = self.views[view_id]
+                response = chat.send_message(view["text"])
+                field_name_list = response.text.strip().split(",")
                 text = ""
-                if view["text"] is not None:
-                    response = chat.send_message(view["text"])
-                    text = input_list[response.text.strip()]
+                for name in field_name_list:
+                    if name in input_list:
+                        text = input_list[name]
+                        break
                 possible_events.append(SetTextEvent(view=self.views[view_id], text=text))
                 touch_exclude_view_ids.add(view_id)
                 # TODO figure out what event can be sent to editable views
@@ -456,9 +459,9 @@ class DeviceState(object):
                 touch_exclude_view_ids.add(view_id)
                 touch_exclude_view_ids.union(self.get_all_children(self.views[view_id]))
 
-        for view_id in enabled_view_ids:
-            if self.__safe_dict_get(self.views[view_id], 'long_clickable'):
-                possible_events.append(LongTouchEvent(view=self.views[view_id]))
+        # for view_id in enabled_view_ids:
+        #     if self.__safe_dict_get(self.views[view_id], 'long_clickable'):
+        #         possible_events.append(LongTouchEvent(view=self.views[view_id]))
 
         for view_id in enabled_view_ids:
             if view_id in touch_exclude_view_ids:
