@@ -175,7 +175,7 @@ class SMSLogEnv(StaticAppEnv):
     SMS log
     """
 
-    def __init__(self, phone="1234567890", sms_in=True, content="Hello world", env_dict=None):
+    def __init__(self, phone="1234567890", sms_in=True, content="Hello World", env_dict=None):
         """
         a call log
         :param phone: str, phone number of contact
