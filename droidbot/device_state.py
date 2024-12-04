@@ -4,6 +4,7 @@ import os
 
 from .utils import md5
 from .input_event import TouchEvent, LongTouchEvent, ScrollEvent, SetTextEvent, KeyEvent
+from .GeminiAI import GeminiAi
 
 
 class DeviceState(object):
@@ -423,6 +424,20 @@ class DeviceState(object):
         # enabled_view_ids.reverse()
 
         for view_id in enabled_view_ids:
+            if self.__safe_dict_get(self.views[view_id], 'editable'):
+                input_list = GeminiAi.getInputDict()
+                chat = GeminiAi.get_chat()
+                view = self.views[view_id]
+                text = ""
+                if view["text"] is not None:
+                    response = chat.send_message(view["text"])
+                    text = input_list[response.text.strip()]
+                possible_events.append(SetTextEvent(view=self.views[view_id], text=text))
+                touch_exclude_view_ids.add(view_id)
+                # TODO figure out what event can be sent to editable views
+                pass
+
+        for view_id in enabled_view_ids:
             if self.__safe_dict_get(self.views[view_id], 'clickable'):
                 possible_events.append(TouchEvent(view=self.views[view_id]))
                 touch_exclude_view_ids.add(view_id)
@@ -444,13 +459,6 @@ class DeviceState(object):
         for view_id in enabled_view_ids:
             if self.__safe_dict_get(self.views[view_id], 'long_clickable'):
                 possible_events.append(LongTouchEvent(view=self.views[view_id]))
-
-        for view_id in enabled_view_ids:
-            if self.__safe_dict_get(self.views[view_id], 'editable'):
-                possible_events.append(SetTextEvent(view=self.views[view_id], text="Hello World"))
-                touch_exclude_view_ids.add(view_id)
-                # TODO figure out what event can be sent to editable views
-                pass
 
         for view_id in enabled_view_ids:
             if view_id in touch_exclude_view_ids:
