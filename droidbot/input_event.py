@@ -183,6 +183,7 @@ class EventLog(object):
         self.is_profiling = False
         self.profiling_pid = -1
         self.sampling = None
+        self.events = []
         # sampling feature was added in Android 5.0 (API level 21)
         if profiling_method is not None and \
            str(profiling_method) != "full" and \
@@ -234,11 +235,40 @@ class EventLog(object):
         """
         start sending event
         """
+        if self.event in self.events:
+            return
+        else:
+            self.events.append(self.event)
         self.from_state = self.device.get_current_state()
         self.start_profiling()
         self.event_str = self.event.get_event_str(self.from_state)
         print("Action: %s" % self.event_str)
-        self.device.send_event(self.event)
+        # Screenshot must be taken before sending the event
+        # imgg = self.device.take_screenshot()
+        # print(imgg)
+        # if isinstance(self.event, KillAppEvent) == False:
+        #     if "Button" in self.event.view['class']:
+        #         before = self.device.take_screenshot()
+        #         self.device.send_event(self.event)
+        #         after = self.device.take_screenshot()
+        #         print(before)
+        #         print(after)
+        #         print(self.event)
+        #         print(self.event.view)
+        # else:
+        #     self.device.send_event(self.event)
+        if isinstance(self.event, TouchEvent):
+            if "Button" in self.event.view['class']:
+                before = self.device.take_screenshot()
+                self.device.send_event(self.event)
+                after = self.device.take_screenshot()
+                print("Before: %s" % before)
+                print("After: %s" % after)
+                
+            else:
+                self.device.send_event(self.event)
+        else:
+            self.device.send_event(self.event)
 
     def start_profiling(self):
         """

@@ -404,6 +404,7 @@ class DeviceState(object):
         return -1
 
     def get_possible_input(self):
+        # print(self.views)
         """
         Get a list of possible input events for this state
         :return: list of InputEvent
@@ -424,7 +425,7 @@ class DeviceState(object):
         # enabled_view_ids.reverse()
 
         for view_id in enabled_view_ids:
-            if self.__safe_dict_get(self.views[view_id], 'editable'):
+            if self.__safe_dict_get(self.views[view_id], 'editable') and "EditText" in self.views[view_id]['class']:
                 input_list = GeminiAi.getInputDict()
                 chat = GeminiAi.get_chat()
                 view = self.views[view_id]
@@ -441,7 +442,7 @@ class DeviceState(object):
                 pass
 
         for view_id in enabled_view_ids:
-            if self.__safe_dict_get(self.views[view_id], 'clickable'):
+            if self.__safe_dict_get(self.views[view_id], 'clickable') and "Button" in self.views[view_id]['class']:
                 possible_events.append(TouchEvent(view=self.views[view_id]))
                 touch_exclude_view_ids.add(view_id)
                 touch_exclude_view_ids.union(self.get_all_children(self.views[view_id]))
