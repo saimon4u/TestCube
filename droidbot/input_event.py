@@ -257,18 +257,19 @@ class EventLog(object):
         #         print(self.event.view)
         # else:
         #     self.device.send_event(self.event)
-        if isinstance(self.event, TouchEvent):
-            if "Button" in self.event.view['class']:
-                before = self.device.take_screenshot()
-                self.device.send_event(self.event)
-                after = self.device.take_screenshot()
-                print("Before: %s" % before)
-                print("After: %s" % after)
+        # if isinstance(self.event, TouchEvent):
+        #     if "Button" in self.event.view['class']:
+        #         before = self.device.take_screenshot()
+        #         self.device.send_event(self.event)
+        #         after = self.device.take_screenshot()
+        #         print("Before: %s" % before)
+        #         print("After: %s" % after)
                 
-            else:
-                self.device.send_event(self.event)
-        else:
-            self.device.send_event(self.event)
+        #     else:
+        #         self.device.send_event(self.event)
+        # else:
+        #     self.device.send_event(self.event)
+        self.device.send_event(self.event)
 
     def start_profiling(self):
         """
@@ -498,10 +499,40 @@ class TouchEvent(UIEvent):
         x = random.uniform(0, device.get_width())
         y = random.uniform(0, device.get_height())
         return TouchEvent(x, y)
+    
 
     def send(self, device):
-        x, y = UIEvent.get_xy(x=self.x, y=self.y, view=self.view)
-        device.view_long_touch(x=x, y=y, duration=200)
+        if "Image" in self.view['class']:
+            return True
+        if self.view and "Button" in self.view['class'] and self.view['clickable']:
+            before = device.take_screenshot()
+            print(f'Before Image: {before}')
+            x, y = UIEvent.get_xy(x=self.x, y=self.y, view=self.view)
+            device.view_long_touch(x=x, y=y, duration=200)
+            import time
+            time.sleep(1.5)
+            after = device.take_screenshot()
+            print(f'After Image: {after}')
+            result = ImageComparer.compareImage(before, after)
+
+            import json
+            import re
+
+            match = re.search(r'\{.*\}', result, re.DOTALL)
+
+            if match:
+                json_str = match.group(0) 
+                parsed_data = json.loads(json_str)
+                print('\n\n\n')
+                print(f'Verdict = {parsed_data["verdict"]}')
+                print(f'Response = {parsed_data["response"]}')
+                print('\n\n\n')
+            else:
+                print("No JSON found in the text.")
+
+        else:
+            x, y = UIEvent.get_xy(x=self.x, y=self.y, view=self.view)
+            device.view_long_touch(x=x, y=y, duration=200)
         return True
 
     def get_event_str(self, state):
@@ -866,3 +897,29 @@ EVENT_TYPES = {
     KEY_IntentEvent: IntentEvent,
     KEY_SpawnEvent: SpawnEvent
 }
+
+
+class ImageComparer:
+    @staticmethod
+    def compareImage(before_image_path, after_image_path):
+        import google.generativeai as genai
+        import PIL.Image
+        import os
+        genai.configure(api_key="AIzaSyDy_VQnRxk5LqrOvEtpdZzxXdM8tIt_0xg")
+
+        try:
+            image1 = PIL.Image.open(before_image_path)
+            image2 = PIL.Image.open(after_image_path)
+
+            model = genai.GenerativeModel('gemini-2.0-flash')
+            response = model.generate_content([
+                "Describe the key visual differences between these two images. Focus on changes in objects, colors, and overall composition. I am mainly searching if this two page is identical or not. So if you find any type of dissimilarity ans yes otherwise no. By anytype i mean at the app screen not the system bar of the phone. Ans me in only yes or no. Give me response as a json. The json should contain 2 things. For example the dissimilarity is a toast message that contains Password must be 8 character long. So You should create a json like {verditc: fail, response: Password must be 8 character long} here verdict will be the tone of the response like it's negative or positive. Positive means pass and negative means fail. Also if the 2nd image contain a new page image then it should consider as a pass.",
+                image1,
+                image2
+            ])
+            return response.text
+
+        except FileNotFoundError:
+            print("Error: Image files not found.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
