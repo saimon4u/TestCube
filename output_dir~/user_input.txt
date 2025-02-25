@@ -1,6 +1,0 @@
-add device 1: /dev/input/event0
-  name:     "ACCDET"
-add device 2: /dev/input/event2
-  name:     "mtk-tpd"
-add device 3: /dev/input/event1
-  name:     "mtk-kpd"
