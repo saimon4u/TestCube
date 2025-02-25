@@ -1,0 +1,57 @@
+{
+  "tag": "2025-01-25_154614",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": true,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          60,
+          738
+        ],
+        [
+          660,
+          882
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/new_login_password",
+      "checked": false,
+      "text": "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 6,
+      "temp_id": 9,
+      "size": "600*144",
+      "signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_password[text]\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022[enabled,,]",
+      "view_str": "b6b3fd1bbda6dde31d5d3b4c522c52a6",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_password",
+      "allowed_actions": [
+        "touch",
+        "set_text",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "2",
+      "desc": "<input bound_box=60,738,660,882>\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022</input>"
+    }
+  },
+  "start_state": "2cc490d9ce7b3199b41a4936bd38805f",
+  "stop_state": "2cc490d9ce7b3199b41a4936bd38805f",
+  "event_str": "TouchEvent(state=2cc490d9ce7b3199b41a4936bd38805f, view=b6b3fd1bbda6dde31d5d3b4c522c52a6(LoginPage/EditText-\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022))"
+}

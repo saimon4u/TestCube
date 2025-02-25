@@ -1,0 +1,55 @@
+{
+  "tag": "2025-01-25_161846",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          300,
+          1539
+        ],
+        [
+          420,
+          1578
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/reg_sign_in_btn",
+      "checked": false,
+      "text": "Sign in",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 28,
+      "size": "120*39",
+      "signature": "[class]android.widget.TextView[resource_id]com.example.chatter:id/reg_sign_in_btn[text]Sign in[enabled,,]",
+      "view_str": "49c4571e6afe00ef7e249d5310224f14",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.example.chatter:id/reg_sign_in_btn",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "12",
+      "desc": "<button bound_box=300,1539,420,1578>Sign in</button>"
+    }
+  },
+  "start_state": "057046f1023140184007fcfa477f9985",
+  "stop_state": "057046f1023140184007fcfa477f9985",
+  "event_str": "TouchEvent(state=057046f1023140184007fcfa477f9985, view=49c4571e6afe00ef7e249d5310224f14(RegistrationPage/TextView-Sign in))"
+}

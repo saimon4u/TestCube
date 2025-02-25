@@ -1,0 +1,55 @@
+{
+  "tag": "2025-01-25_161922",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.google.android.documentsui",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "Grid view",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          576,
+          286
+        ],
+        [
+          672,
+          382
+        ]
+      ],
+      "resource_id": "com.google.android.documentsui:id/sub_menu_grid",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 19,
+      "temp_id": 20,
+      "size": "96*96",
+      "signature": "[class]android.widget.TextView[resource_id]com.google.android.documentsui:id/sub_menu_grid[text]None[enabled,,]",
+      "view_str": "fe2fe7b0b69d6b68cd0fa599bcfc303d",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.google.android.documentsui:id/sub_menu_grid",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "3",
+      "desc": "<button text='Grid view' bound_box=576,286,672,382></button>"
+    }
+  },
+  "start_state": "9abf06dccd79d406077c7e56ea2b3a30",
+  "stop_state": "8fbb1036111d135e9741475fdbf1fec7",
+  "event_str": "TouchEvent(state=9abf06dccd79d406077c7e56ea2b3a30, view=fe2fe7b0b69d6b68cd0fa599bcfc303d(PickActivity/TextView-))"
+}

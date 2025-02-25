@@ -1,0 +1,235 @@
+Activity Resolver Table:
+  Schemes:
+      genericidp:
+        8bc991f com.example.chatter/com.google.firebase.auth.internal.GenericIdpActivity filter f281b92
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "genericidp"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+      recaptcha:
+        beed46c com.example.chatter/com.google.firebase.auth.internal.RecaptchaActivity filter 1666963
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "recaptcha"
+          Authority: "firebase.auth": -1
+          Path: "PatternMatcher{LITERAL: /}"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f18a35 com.example.chatter/.Splash filter 11b8d1d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.google.android.c2dm.intent.RECEIVE:
+        8f22eca com.example.chatter/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 2493960
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        39ba83b com.example.chatter/com.google.firebase.messaging.FirebaseMessagingService filter 8e8de19
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasPartialTypes=false
+
+Permissions:
+  Permission [com.example.chatter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (f2acb58):
+    sourcePackage=com.example.chatter
+    uid=11175 gids=null type=0 prot=signature
+    perm=Permission{d3d94b1 com.example.chatter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    packageSetting=PackageSetting{86c6d96 com.example.chatter/11175}
+
+Registered ContentProviders:
+  com.example.chatter/com.squareup.picasso.PicassoProvider:
+    Provider{7928d17 com.example.chatter/com.squareup.picasso.PicassoProvider}
+  com.example.chatter/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{72d4504 com.example.chatter/com.google.firebase.provider.FirebaseInitProvider}
+  com.example.chatter/androidx.startup.InitializationProvider:
+    Provider{e65caed com.example.chatter/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.example.chatter.firebaseinitprovider]:
+    Provider{72d4504 com.example.chatter/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{579cd22 com.example.chatter}
+  [com.example.chatter.androidx-startup]:
+    Provider{e65caed com.example.chatter/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{579cd22 com.example.chatter}
+  [com.example.chatter.com.squareup.picasso]:
+    Provider{7928d17 com.example.chatter/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{579cd22 com.example.chatter}
+
+Key Set Manager:
+  [com.example.chatter]
+      Signing KeySets: 584
+
+Packages:
+  Package [com.example.chatter] (86c6d96):
+    userId=11175
+    pkg=Package{f285ede com.example.chatter}
+    codePath=/data/app/com.example.chatter-Nq6gCHWF7EbJGHQ-VertKg==
+    resourcePath=/data/app/com.example.chatter-Nq6gCHWF7EbJGHQ-VertKg==
+    legacyNativeLibraryDir=/data/app/com.example.chatter-Nq6gCHWF7EbJGHQ-VertKg==/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=24 targetSdk=33
+    versionName=1.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{579cd22 com.example.chatter}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.example.chatter
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2025-01-25 15:42:39
+    firstInstallTime=2025-01-25 15:42:42
+    lastUpdateTime=2025-01-25 15:42:42
+    signatures=PackageSignatures{ba8e3b3 version:2, signatures:[8d47dacb], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      com.example.chatter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.WAKE_LOCK
+      com.google.android.c2dm.permission.RECEIVE
+      com.example.chatter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.example.chatter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=2087068 installed=true hidden=false suspended=false stopped=true notLaunched=true enabled=0 instant=false virtual=false
+    overlay paths:
+      /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=3755
+  User 0:
+    seq=901, package=com.mnt.your_campus
+    seq=969, package=com.google.android.trichromelibrary_672310733
+    seq=970, package=com.google.android.apps.wellbeing
+    seq=1449, package=com.google.android.trichromelibrary_677808133
+    seq=1503, package=com.google.android.apps.adm
+    seq=1664, package=com.hihonor.android.honorsuite
+    seq=1690, package=mega.privacy.android.app
+    seq=1767, package=com.twgbd.dims
+    seq=1832, package=com.google.android.trichromelibrary_677804133
+    seq=1833, package=com.google.android.trichromelibrary_677810433
+    seq=1893, package=com.supercell.clashofclans
+    seq=2101, package=com.konasl.nagad
+    seq=2114, package=com.cron.calendar
+    seq=2192, package=com.imo.android.imoimbeta
+    seq=2199, package=com.google.android.partnersetup
+    seq=2375, package=com.google.android.inputmethod.latin
+    seq=2398, package=com.example.gitstat
+    seq=2430, package=com.portonics.mygp
+    seq=2458, package=com.cricbuzz.android
+    seq=2478, package=com.reincubate.camo
+    seq=2493, package=com.google.android.trichromelibrary_677813533
+    seq=2496, package=com.cloudflare.onedotonedotonedotone
+    seq=2638, package=com.transsion.XOSLauncher
+    seq=2658, package=com.facebook.system
+    seq=2675, package=com.facebook.appmanager
+    seq=2696, package=com.facebook.services
+    seq=2726, package=com.lemon.lvoverseas
+    seq=2748, package=com.dynamitegamesltd.callbridge29andcallbreak
+    seq=2810, package=com.google.android.apps.messaging
+    seq=2861, package=com.transsion.magicshow
+    seq=2862, package=com.niksoftware.snapseed
+    seq=2924, package=com.google.android.play.games
+    seq=3035, package=imagetopdf.pdfconverter.jpgtopdf.pdfeditor
+    seq=3095, package=com.coffeebeanventures.easyvoicerecorder
+    seq=3096, package=ridmik.keyboard
+    seq=3144, package=com.jockerhsd.operaastmfore
+    seq=3205, package=com.transsnet.store
+    seq=3239, package=jp.konami.pesam
+    seq=3261, package=com.adobe.reader
+    seq=3271, package=org.telegram.messenger
+    seq=3277, package=com.google.android.apps.tachyon
+    seq=3284, package=com.google.android.trichromelibrary_677826133
+    seq=3393, package=com.github.android
+    seq=3395, package=com.discord
+    seq=3397, package=com.google.android.keep
+    seq=3398, package=com.mxtech.videoplayer.ad
+    seq=3399, package=com.pathao.user
+    seq=3429, package=com.facebook.orca
+    seq=3438, package=com.android.chrome
+    seq=3458, package=com.bKash.customerapp
+    seq=3478, package=water.sort.puzzle.game.color.sorting.free
+    seq=3492, package=com.google.android.apps.docs.editors.sheets
+    seq=3493, package=com.google.android.apps.docs.editors.docs
+    seq=3495, package=com.tjd.tjdmainS2
+    seq=3496, package=com.simplemobilephotoresizer
+    seq=3509, package=com.facebook.katana
+    seq=3557, package=com.hdictionary.bn
+    seq=3561, package=com.google.android.youtube
+    seq=3571, package=com.google.android.trichromelibrary_677820033
+    seq=3572, package=com.google.android.trichromelibrary_677826033
+    seq=3578, package=com.google.android.googlequicksearchbox
+    seq=3579, package=com.google.android.apps.classroom
+    seq=3580, package=com.google.android.apps.translate
+    seq=3581, package=com.google.android.tts
+    seq=3582, package=com.twitter.android
+    seq=3664, package=com.transsion.phonemaster
+    seq=3671, package=com.google.android.gms
+    seq=3682, package=com.example.filedropper
+    seq=3687, package=com.mobilefootie.wc2010
+    seq=3689, package=com.caretutors
+    seq=3691, package=com.android.vending
+    seq=3692, package=com.google.android.webview
+    seq=3693, package=com.google.android.trichromelibrary_677826233
+    seq=3695, package=com.instagram.android
+    seq=3703, package=us.zoom.videomeetings
+    seq=3704, package=com.transsion.magazineservice
+    seq=3709, package=com.foodiBd
+    seq=3712, package=com.daraz.android
+    seq=3714, package=com.google.audio.hearing.visualization.accessibility.scribe
+    seq=3715, package=com.google.android.apps.maps
+    seq=3727, package=com.google.android.gm
+    seq=3729, package=com.linkedin.android
+    seq=3730, package=com.intsig.camscanner
+    seq=3731, package=com.google.android.apps.photos
+    seq=3732, package=com.google.android.projection.gearhead
+    seq=3733, package=com.google.android.apps.youtube.music
+    seq=3735, package=com.facebook.lite
+    seq=3737, package=com.arena.banglalinkmela.app
+    seq=3738, package=com.whatsapp
+    seq=3748, package=com.google.android.apps.docs
+    seq=3753, package=io.github.ylimit.droidbotapp
+    seq=3754, package=com.example.chatter
+
+
+Dexopt state:
+  [com.example.chatter]
+    path: /data/app/com.example.chatter-Nq6gCHWF7EbJGHQ-VertKg==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown]
+
+
+Compiler stats:
+  [com.example.chatter]
+     base.apk - 9426
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:
+    Session ID: 2135250368
+      State: SUCCESS

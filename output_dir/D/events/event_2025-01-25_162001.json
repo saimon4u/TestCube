@@ -1,0 +1,49 @@
+{
+  "tag": "2025-01-25_162001",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          5,
+          814
+        ],
+        [
+          65,
+          874
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 10,
+      "temp_id": 11,
+      "size": "60*60",
+      "signature": "[class]android.widget.ImageView[resource_id]None[text]None[enabled,,]",
+      "view_str": "34be5d151cc520d93db102365639edf1",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]None"
+    }
+  },
+  "start_state": "057046f1023140184007fcfa477f9985",
+  "stop_state": "057046f1023140184007fcfa477f9985",
+  "event_str": "TouchEvent(state=057046f1023140184007fcfa477f9985, view=34be5d151cc520d93db102365639edf1(RegistrationPage/ImageView-))"
+}

@@ -1,0 +1,58 @@
+{
+  "tag": "2025-01-25_161656",
+  "event": {
+    "event_type": "set_text",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          308,
+          812
+        ],
+        [
+          713,
+          872
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/reg_username",
+      "checked": false,
+      "text": "saimon",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 10,
+      "temp_id": 13,
+      "size": "405*60",
+      "signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/reg_username[text]saimon[enabled,,]",
+      "view_str": "e96b22bcba0e6eca894a89e6b1ba06c9",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/reg_username",
+      "allowed_actions": [
+        "touch",
+        "set_text",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "3",
+      "desc": "<input bound_box=308,812,713,872>saimon</input>"
+    },
+    "text": ""
+  },
+  "start_state": "12b0bd0ccfc358920d7f53b5ff6e6022",
+  "stop_state": "12b0bd0ccfc358920d7f53b5ff6e6022",
+  "event_str": "SetTextEvent(state=12b0bd0ccfc358920d7f53b5ff6e6022, view=e96b22bcba0e6eca894a89e6b1ba06c9(PickActivity/EditText-saimon), text=)"
+}

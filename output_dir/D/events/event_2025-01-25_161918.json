@@ -1,0 +1,55 @@
+{
+  "tag": "2025-01-25_161918",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.google.android.documentsui",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "Show roots",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          80
+        ],
+        [
+          112,
+          176
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageButton",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 21,
+      "temp_id": 22,
+      "size": "112*96",
+      "signature": "[class]android.widget.ImageButton[resource_id]None[text]None[enabled,,]",
+      "view_str": "676a2863a1afc3f536907cb684c1dffe",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]None",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "4",
+      "desc": "<button text='Show roots' bound_box=0,80,112,176></button>"
+    }
+  },
+  "start_state": "8fbb1036111d135e9741475fdbf1fec7",
+  "stop_state": "9abf06dccd79d406077c7e56ea2b3a30",
+  "event_str": "TouchEvent(state=8fbb1036111d135e9741475fdbf1fec7, view=676a2863a1afc3f536907cb684c1dffe(PickActivity/ImageButton-))"
+}

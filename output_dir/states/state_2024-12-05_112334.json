@@ -1,0 +1,773 @@
+{
+  "tag": "2024-12-05_112334",
+  "state_str": "2aaa1c215eec2885e0d02de1e839c67d",
+  "state_str_content_free": "f013a211257e05dd339740d35007b296",
+  "foreground_activity": "com.example.chatter/.LoginPage",
+  "activity_stack": [
+    "com.example.chatter/.LoginPage"
+  ],
+  "background_services": [
+    "com.google.android.gms/.play.integrity.api.service.IntegrityApiPersistentService",
+    "com.google.android.gms/.chimera.PersistentInternalBoundBrokerService",
+    "com.facebook.orca/com.facebook.mqtt.service.MqttServiceV2",
+    "com.transsion.smartpanel/.SmartPanelService",
+    "com.google.android.gms/.ads.identifier.service.AdvertisingIdService",
+    "com.google.android.gms/.mobiledataplan.service.PeriodicUpdaterService",
+    "com.google.android.gms/.nearby.sharing.ReceiveSurfaceService",
+    "com.google.android.gms/.icing.service.AppIndexingService",
+    "com.google.android.googlequicksearchbox/com.google.android.apps.gsa.shared.util.keepalive.StandaloneKeepAlive",
+    "com.transsion.plat.appupdate/com.transsion.oslab.service.OSLabCoreService",
+    "com.hoffnung/.TPMSService",
+    "com.transsnet.store/com.transsnet.launcherlib.services.DistributeService",
+    "com.mediatek.location.lppe.main/.LPPeServiceWrapper",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.android.chrome/org.chromium.content.app.SandboxedProcessService0",
+    "com.android.quickstep/.TouchInteractionService",
+    "com.google.android.gms/.measurement.service.MeasurementBrokerService",
+    "com.transsion.XOSLauncher/com.cloud.tmc.miniapp.ipc.multiprogress.IpcMiniProcessClientService",
+    "com.android.vending/com.google.android.finsky.billing.iab.InAppBillingService",
+    "com.whatsapp/.messaging.MessageService",
+    "com.android.systemui/.ImageWallpaper",
+    "com.bKash.customerapp/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService",
+    "com.transsion.plat.appupdate/com.transsion.osupdate.service.OSDownLoadService",
+    "com.transsion.phonemanager/.BinderPoolService",
+    "org.telegram.messenger/.NotificationRepeat",
+    "com.google.android.gms/.personalsafety.service.SndDetectionService",
+    "com.google.android.gms/.auth.setup.devicesignals.LockScreenService",
+    "com.google.android.gms/.gcm.GcmService",
+    "com.google.android.ims/.services.CarrierServicesImsService",
+    "com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps",
+    "com.google.android.gms/.clearcut.debug.ClearcutDebugDumpService",
+    "com.google.android.gms/.stats.eastworld.EastworldService",
+    "com.android.phone/com.mediatek.internal.telephony.dataconnection.MtkQualifiedNetworksService",
+    "com.google.android.gms/.chimera.PersistentApiService",
+    "com.caretutors/com.google.firebase.sessions.SessionLifecycleService",
+    "com.google.android.gms/.location.geocode.GeocodeService",
+    "com.android.phone/com.android.internal.telephony.CellularNetworkService",
+    "com.transsion.faceid/.FaceUnlockService",
+    "com.transsnet.store/com.afmobi.palmplay.service.PalmstoreService",
+    "com.google.android.gms/.chimera.PersistentBoundBrokerService",
+    "com.google.android.gms/.chimera.GmsBoundBrokerService",
+    "com.google.android.gms/.chimera.GmsApiService",
+    "com.android.networkstack.inprocess/com.android.server.NetworkStackService",
+    "com.hoffnung/com.transsion.aibox.service.BoxJoinService",
+    "com.google.android.gms/.findmydevice.spot.bleadvertising.OfflineBeaconService_Persistent",
+    "com.google.android.gms/.tron.CollectionService",
+    "com.hoffnung/com.transsion.aibox.sort.UpdateAlarmService",
+    "com.whatsapp/.AlarmService",
+    "com.instagram.android/com.facebook.video.heroplayer.service.HeroKeepAliveService",
+    "com.transsion.XOSLauncher/com.scene.zeroscreen.overlay.service.OverlayScreenService",
+    "com.google.android.gms/.nearby.sharing.SendSurfaceService",
+    "io.github.ylimit.droidbotapp/.DroidBotIME",
+    "com.google.android.gms/com.google.android.location.fused.FusedLocationService",
+    "com.transsion.health/.main.step.FrameworkService",
+    "com.google.android.gms/.semanticlocation.service.SemanticLocationService",
+    "com.google.android.gms/.gcm.nts.SchedulerService",
+    "com.google.android.apps.wellbeing/.azr.impl.AzrConditionProviderService",
+    "com.bKash.customerapp/com.google.firebase.sessions.SessionLifecycleService",
+    "com.hoffnung/com.transsion.aibox.service.AiBoxService",
+    "com.android.bluetooth/.a2dp.A2dpService",
+    "com.transsion.videocallenhancer/com.transsion.whatsapputils.service.NotificationListener",
+    "com.transsion.trancare/.handler.config.TranConfigService",
+    "com.transsion.magazineservice/.wallpaper.KeepAliveService",
+    "io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService",
+    "com.google.android.googlequicksearchbox/com.google.android.apps.gsa.nga.engine.viss.NgaService",
+    "com.google.android.gms/.thunderbird.EmergencyPersistentService",
+    "com.android.systemui/.SystemUIService",
+    "com.android.chrome/org.chromium.content.app.PrivilegedProcessService0",
+    "com.google.android.googlequicksearchbox/com.google.frameworks.client.data.android.server.tiktok.InteractorProcessEndpointService",
+    "android/.hardware.location.GeofenceHardwareService",
+    "com.android.se/.SecureElementService",
+    "com.google.android.ims/.services.RcsService",
+    "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
+    "com.caretutors/io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService",
+    "com.google.android.gms/.personalsafety.service.PSAService",
+    "com.google.android.ext.services/android.ext.services.notification.Assistant",
+    "com.transsion.plat.appupdate/com.android.remindmessage.service.HangupDownloadService",
+    "org.telegram.messenger/.NotificationsService",
+    "com.google.android.gms/.auth.trustagent.GoogleTrustAgent",
+    "com.google.android.gms/.location.persistent.LocationPersistentService",
+    "com.whatsapp/.push.GcmListenerService",
+    "com.google.android.gms/.nearby.discovery.service.DiscoveryService",
+    "com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService",
+    "com.android.server.telecom/.components.BluetoothPhoneService",
+    "com.transsion.magazineservice/.service.MagazineService",
+    "com.google.android.permissioncontroller/com.android.packageinstaller.role.service.RoleControllerServiceImpl",
+    "com.transsion.phonemaster/com.transsion.common.MasterCoreService",
+    "com.android.phone/com.mediatek.internal.telephony.dataconnection.IwlanDataService",
+    "com.google.android.gms/.fido.authenticator.service.AuthenticatorService",
+    "com.portonics.mygp/com.google.android.gms.tagmanager.TagManagerService",
+    "com.google.android.apps.photos/com.google.android.libraries.social.async.BackgroundTaskJobService",
+    "com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService",
+    "com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService",
+    "com.google.android.gm/com.google.android.libraries.hub.firebase.FirebaseMessagingServiceImpl",
+    "com.google.android.gms/com.google.android.location.network.NetworkLocationService",
+    "com.android.stk/.StkAppService",
+    "com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService",
+    "com.transsion.statisticalsales/.sms.InforSmsService",
+    "com.transsion.health/.main.step.StepService",
+    "com.android.phone/com.android.internal.telephony.dataconnection.CellularDataService",
+    "com.facebook.katana/com.facebook.video.heroplayer.service.HeroKeepAliveService",
+    "com.transsion.powercenter/.service.PowerManagerService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService",
+    "com.portonics.mygp/.service.MyFirebaseMessagingService",
+    "com.facebook.lite/com.facebook.rti.push.service.FbnsService",
+    "com.transsion.XOSLauncher/com.transsion.athena.aidl.AthenaTrackService",
+    "com.transsion.batterylab/.BatteryLabService",
+    "com.zaz.translate/com.talpa.overlay.service.AccessService",
+    "com.google.android.gms/.games.chimera.GamesAndroidServiceProxy",
+    "com.google.android.gms/.games.chimera.GamesSyncServiceMainProxy",
+    "com.facebook.services/com.facebook.oxygen.services.fbns.PreloadedFbnsService",
+    "com.facebook.orca/com.facebook.video.heroplayer.service.HeroKeepAliveService",
+    "com.transsion.plat.appupdate/com.transsion.attribution.service.AttributionService",
+    "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService",
+    "com.transsion.tsdsmartcomm/.TrapReceiverService",
+    "com.mediatek.capctrl.service/.MtkCapCtrlService",
+    "com.bKash.customerapp/com.mapbox.android.telemetry.MapboxTelemetryService",
+    "com.google.android.gms/.crisisalerts.init.CrisisAlertsPersistentService",
+    "com.android.phone/.vvm.RemoteVvmTaskManager",
+    "com.instagram.android/com.instagram.jobscheduler.bgfetch.scheduler.IgBgFetchTaskLifeService",
+    "com.transsion.plat.appupdate/com.transsion.appupdate.service.CoreService",
+    "com.google.android.gms/.lockbox.service.LockboxBrokerService",
+    "com.android.ons/.OpportunisticNetworkService",
+    "com.google.android.tts/com.google.android.apps.speech.tts.googletts.service.GoogleTtsService",
+    "com.google.android.gms/.common.stats.GmsCoreStatsService",
+    "com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService",
+    "com.google.android.gms/.dtdi.lifecycle.LifecycleService",
+    "com.google.android.gms/.chimera.GmsInternalBoundBrokerService",
+    "com.transsion.trancare/.MainService",
+    "com.gallery20/.arch.service.MediaMonitorJobSchedulerService",
+    "com.android.mms.service/.MmsService",
+    "com.google.android.gms/.personalsafety.service.PersonalSafetyService",
+    "com.android.phone/.TelephonyDebugService",
+    "com.snaptube.premium/.alarm.AlarmService",
+    "com.mediatek.ims/.MtkDynamicImsService",
+    "com.transsion.XOSLauncher/com.transsion.xlauncher.popup.NotificationListener",
+    "com.google.android.gms/.icing.service.IndexService",
+    "com.android.phone/com.mediatek.internal.telephony.IWlanNetworkService",
+    "com.mediatek.telephony/.MtkTelephonyAssistService",
+    "org.telegram.messenger/.KeepAliveJob",
+    "com.google.android.googlequicksearchbox/com.google.android.apps.gsa.notificationlistener.GsaNotificationListenerService"
+  ],
+  "width": 720,
+  "height": 1640,
+  "views": [
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        1,
+        13,
+        14
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          720,
+          1640
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "720*1640",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "8e84a62ba1920491d9eaa76b462cb7b3",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        2
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          720,
+          1608
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "720*1608",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "3d19c8a67fb9cd86f5bae1b053ccf338",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        3
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          80
+        ],
+        [
+          720,
+          1608
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 1,
+      "temp_id": 2,
+      "size": "720*1528",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "49c4564688f25e8655f98f8653830a4f",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        4
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          80
+        ],
+        [
+          720,
+          1608
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/action_bar_root",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 2,
+      "temp_id": 3,
+      "size": "720*1528",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.example.chatter:id/action_bar_root[text]None[enabled,,]",
+      "view_str": "4c2c9642d9e7018fb8b46045d1c75a93",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.example.chatter:id/action_bar_root"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        5
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          80
+        ],
+        [
+          720,
+          1608
+        ]
+      ],
+      "resource_id": "android:id/content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 4,
+      "size": "720*1528",
+      "signature": "[class]android.widget.FrameLayout[resource_id]android:id/content[text]None[enabled,,]",
+      "view_str": "368157867938f14da753cba3e52b0741",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]android:id/content"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        6
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          80
+        ],
+        [
+          720,
+          1608
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.ViewGroup",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 4,
+      "temp_id": 5,
+      "size": "720*1528",
+      "signature": "[class]android.view.ViewGroup[resource_id]None[text]None[enabled,,]",
+      "view_str": "18725adecf437f7ebcff2847f9c7de6e",
+      "content_free_signature": "[class]android.view.ViewGroup[resource_id]None"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 6,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          60,
+          451
+        ],
+        [
+          660,
+          1238
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 6,
+      "size": "600*787",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "c63fe614000fae9ca3f495d194e29263",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          124,
+          451
+        ],
+        [
+          596,
+          532
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Sign in to Continue",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 7,
+      "size": "472*81",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Sign in to Continue[enabled,,]",
+      "view_str": "4f7b2183b5ef80d70498b41c7f3dfff9",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "0",
+      "desc": "<p bound_box=124,451,596,532>Sign in to Continue</p>"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          60,
+          563
+        ],
+        [
+          660,
+          707
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/new_login_email",
+      "checked": false,
+      "text": "Enter Email",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 6,
+      "temp_id": 8,
+      "size": "600*144",
+      "signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_email[text]Enter Email[enabled,,]",
+      "view_str": "8e82953f236c433012fd2bfae6da9929",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_email",
+      "allowed_actions": [
+        "touch",
+        "set_text",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "1",
+      "desc": "<input bound_box=60,563,660,707>Enter Email</input>"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": true,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          60,
+          738
+        ],
+        [
+          660,
+          882
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/new_login_password",
+      "checked": false,
+      "text": "Enter Password",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 6,
+      "temp_id": 9,
+      "size": "600*144",
+      "signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_password[text]Enter Password[enabled,,]",
+      "view_str": "0c7a11105b7e1eacfd1f96610a1fd366",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_password",
+      "allowed_actions": [
+        "touch",
+        "set_text",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "2",
+      "desc": "<input bound_box=60,738,660,882>Enter Password</input>"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          180,
+          913
+        ],
+        [
+          540,
+          1033
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/newLoginBtn",
+      "checked": false,
+      "text": "Login",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 10,
+      "size": "360*120",
+      "signature": "[class]android.widget.Button[resource_id]com.example.chatter:id/newLoginBtn[text]Login[enabled,,]",
+      "view_str": "f403e75eb3048d1e7b2cca64e3f33c58",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.example.chatter:id/newLoginBtn",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "3",
+      "desc": "<button bound_box=180,913,540,1033>Login</button>"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          224,
+          1064
+        ],
+        [
+          496,
+          1112
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Need an account?",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 11,
+      "size": "272*48",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Need an account?[enabled,,]",
+      "view_str": "4aa1edfd73f37a572c769c4868c1fc7a",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "4",
+      "desc": "<p bound_box=224,1064,496,1112>Need an account?</p>"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          283,
+          1143
+        ],
+        [
+          437,
+          1207
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/new_login_to_sign_up",
+      "checked": false,
+      "text": "Sign Up",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 12,
+      "size": "154*64",
+      "signature": "[class]android.widget.TextView[resource_id]com.example.chatter:id/new_login_to_sign_up[text]Sign Up[enabled,,]",
+      "view_str": "e9137671e62f2648d1bd7137d9d118fe",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.example.chatter:id/new_login_to_sign_up",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "5",
+      "desc": "<button bound_box=283,1143,437,1207>Sign Up</button>"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          720,
+          80
+        ]
+      ],
+      "resource_id": "android:id/statusBarBackground",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 13,
+      "size": "720*80",
+      "signature": "[class]android.view.View[resource_id]android:id/statusBarBackground[text]None[enabled,,]",
+      "view_str": "130080230f21725bb1229535387b3906",
+      "content_free_signature": "[class]android.view.View[resource_id]android:id/statusBarBackground"
+    },
+    {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1608
+        ],
+        [
+          720,
+          1640
+        ]
+      ],
+      "resource_id": "android:id/navigationBarBackground",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 14,
+      "size": "720*32",
+      "signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground[text]None[enabled,,]",
+      "view_str": "27a6c9397ba0b30efca79f96d82cf175",
+      "content_free_signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "tag": "2025-01-25_161557",
+  "event": {
+    "event_type": "set_text",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          216,
+          955
+        ],
+        [
+          713,
+          1015
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/reg_email",
+      "checked": false,
+      "text": "saimon@gmail.com",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 14,
+      "temp_id": 17,
+      "size": "497*60",
+      "signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/reg_email[text]saimon@gmail.com[enabled,,]",
+      "view_str": "64ccfaa7f0c0bec69fb783c234047da9",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/reg_email",
+      "allowed_actions": [
+        "touch",
+        "set_text",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "5",
+      "desc": "<input bound_box=216,955,713,1015>saimon@gmail.com</input>"
+    },
+    "text": "saimon@gmail.com"
+  },
+  "start_state": "057046f1023140184007fcfa477f9985",
+  "stop_state": "057046f1023140184007fcfa477f9985",
+  "event_str": "SetTextEvent(state=057046f1023140184007fcfa477f9985, view=64ccfaa7f0c0bec69fb783c234047da9(RegistrationPage/EditText-saimon@gma), text=saimon@gmail.com)"
+}

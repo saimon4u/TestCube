@@ -1,0 +1,58 @@
+{
+  "tag": "2025-01-25_161713",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.google.android.documentsui",
+      "visible": true,
+      "checkable": true,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          48,
+          178
+        ],
+        [
+          292,
+          274
+        ]
+      ],
+      "resource_id": null,
+      "checked": true,
+      "text": "This week",
+      "class": "android.widget.CompoundButton",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 15,
+      "temp_id": 16,
+      "size": "244*96",
+      "signature": "[class]android.widget.CompoundButton[resource_id]None[text]This week[enabled,checked,]",
+      "view_str": "46106b532836b41f1a9398ac3691cddb",
+      "content_free_signature": "[class]android.widget.CompoundButton[resource_id]None",
+      "allowed_actions": [
+        "select",
+        "unselect"
+      ],
+      "special_attrs": [
+        "selected"
+      ],
+      "local_id": "1",
+      "desc": "<checkbox bound_box=48,178,292,274>This week</checkbox>"
+    }
+  },
+  "start_state": "12e613af6d979dbe0385758dd23e0968",
+  "stop_state": "db7c8ddba4e26508040aaee087c0670f",
+  "event_str": "TouchEvent(state=12e613af6d979dbe0385758dd23e0968, view=46106b532836b41f1a9398ac3691cddb(PickActivity/CompoundButton-This week))"
+}

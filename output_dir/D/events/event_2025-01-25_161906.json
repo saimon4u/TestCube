@@ -1,0 +1,52 @@
+{
+  "tag": "2025-01-25_161906",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.google.android.documentsui",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        23,
+        24
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          370
+        ],
+        [
+          256,
+          516
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 21,
+      "temp_id": 22,
+      "size": "256*146",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "84295b26e430b59aed66f0e2ec75e014",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    }
+  },
+  "start_state": "12b0bd0ccfc358920d7f53b5ff6e6022",
+  "stop_state": "8fbb1036111d135e9741475fdbf1fec7",
+  "event_str": "TouchEvent(state=12b0bd0ccfc358920d7f53b5ff6e6022, view=84295b26e430b59aed66f0e2ec75e014(PickActivity/LinearLayout-))"
+}

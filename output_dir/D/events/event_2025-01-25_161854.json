@@ -1,0 +1,55 @@
+{
+  "tag": "2025-01-25_161854",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          80
+        ],
+        [
+          720,
+          300
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Create  New\nAccount",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 6,
+      "size": "720*220",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Create  New\nAccount[enabled,,]",
+      "view_str": "c3e07e7b1fa9a715cafb52a6bab3767f",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "0",
+      "desc": "<p bound_box=0,80,720,300>Create  New\nAccount</p>"
+    }
+  },
+  "start_state": "057046f1023140184007fcfa477f9985",
+  "stop_state": "057046f1023140184007fcfa477f9985",
+  "event_str": "TouchEvent(state=057046f1023140184007fcfa477f9985, view=c3e07e7b1fa9a715cafb52a6bab3767f(RegistrationPage/TextView-Create  Ne))"
+}

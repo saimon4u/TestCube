@@ -1,0 +1,58 @@
+{
+  "tag": "2025-01-26_110341",
+  "event": {
+    "event_type": "set_text",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": true,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          60,
+          738
+        ],
+        [
+          660,
+          882
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/new_login_password",
+      "checked": false,
+      "text": "Enter Password",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 6,
+      "temp_id": 9,
+      "size": "600*144",
+      "signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_password[text]Enter Password[enabled,,]",
+      "view_str": "0c7a11105b7e1eacfd1f96610a1fd366",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_password",
+      "allowed_actions": [
+        "touch",
+        "set_text",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "2",
+      "desc": "<input bound_box=60,738,660,882>Enter Password</input>"
+    },
+    "text": "12345789"
+  },
+  "start_state": "3d954d47eb3f60d0f91a5efbdca2fb4e",
+  "stop_state": "2cc490d9ce7b3199b41a4936bd38805f",
+  "event_str": "SetTextEvent(state=3d954d47eb3f60d0f91a5efbdca2fb4e, view=0c7a11105b7e1eacfd1f96610a1fd366(LoginPage/EditText-Enter Pass), text=12345789)"
+}

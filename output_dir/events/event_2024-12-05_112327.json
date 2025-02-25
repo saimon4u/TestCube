@@ -1,0 +1,11 @@
+{
+  "tag": "2024-12-05_112327",
+  "event": {
+    "event_type": "kill_app",
+    "log_lines": null,
+    "stop_intent": "am force-stop com.example.chatter"
+  },
+  "start_state": "48914d10786f64ced79f5da5d6b7b226",
+  "stop_state": "48914d10786f64ced79f5da5d6b7b226",
+  "event_str": "KillAppEvent()"
+}

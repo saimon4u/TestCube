@@ -1,0 +1,11 @@
+{
+  "tag": "2025-01-25_162111",
+  "event": {
+    "event_type": "intent",
+    "log_lines": null,
+    "intent": "am start com.example.chatter/com.example.chatter.Splash"
+  },
+  "start_state": "e838b1325db49254e54c0709041c472a",
+  "stop_state": "b49ae4a12aec1025e366bba30c1075bf",
+  "event_str": "IntentEvent(intent='am start com.example.chatter/com.example.chatter.Splash')"
+}

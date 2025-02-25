@@ -1,0 +1,11 @@
+{
+  "tag": "2024-12-05_112153",
+  "event": {
+    "event_type": "intent",
+    "log_lines": null,
+    "intent": "am force-stop com.example.chatter"
+  },
+  "start_state": "b49ae4a12aec1025e366bba30c1075bf",
+  "stop_state": "48914d10786f64ced79f5da5d6b7b226",
+  "event_str": "IntentEvent(intent='am force-stop com.example.chatter')"
+}

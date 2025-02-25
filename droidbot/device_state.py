@@ -433,7 +433,7 @@ class DeviceState(object):
                 field_name_list = response.text.strip().split(",")
                 text = ""
                 for name in field_name_list:
-                    if name in input_list:
+                    if input_list and name in input_list:
                         text = input_list[name]
                         break
                 possible_events.append(SetTextEvent(view=self.views[view_id], text=text))

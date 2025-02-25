@@ -1,0 +1,58 @@
+{
+  "tag": "2025-01-25_154512",
+  "event": {
+    "event_type": "set_text",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          60,
+          563
+        ],
+        [
+          660,
+          707
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/new_login_email",
+      "checked": false,
+      "text": "Enter Email",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 6,
+      "temp_id": 8,
+      "size": "600*144",
+      "signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_email[text]Enter Email[enabled,,]",
+      "view_str": "8e82953f236c433012fd2bfae6da9929",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.example.chatter:id/new_login_email",
+      "allowed_actions": [
+        "touch",
+        "set_text",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "1",
+      "desc": "<input bound_box=60,563,660,707>Enter Email</input>"
+    },
+    "text": "saimon@gmail.com"
+  },
+  "start_state": "2aaa1c215eec2885e0d02de1e839c67d",
+  "stop_state": "3d954d47eb3f60d0f91a5efbdca2fb4e",
+  "event_str": "SetTextEvent(state=2aaa1c215eec2885e0d02de1e839c67d, view=8e82953f236c433012fd2bfae6da9929(LoginPage/EditText-Enter Emai), text=saimon@gmail.com)"
+}

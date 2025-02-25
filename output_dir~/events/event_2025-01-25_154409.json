@@ -1,0 +1,55 @@
+{
+  "tag": "2025-01-25_154409",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          116,
+          1514
+        ],
+        [
+          596,
+          1574
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/developer",
+      "checked": false,
+      "text": "\u00a9 Saimon",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 9,
+      "size": "480*60",
+      "signature": "[class]android.widget.TextView[resource_id]com.example.chatter:id/developer[text]\u00a9 Saimon[enabled,,]",
+      "view_str": "c39f1013e6a343714e9ffe14d8bd177b",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.example.chatter:id/developer",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "2",
+      "desc": "<p bound_box=116,1514,596,1574>\u00a9 Saimon</p>"
+    }
+  },
+  "start_state": "b49ae4a12aec1025e366bba30c1075bf",
+  "stop_state": "b49ae4a12aec1025e366bba30c1075bf",
+  "event_str": "TouchEvent(state=b49ae4a12aec1025e366bba30c1075bf, view=c39f1013e6a343714e9ffe14d8bd177b(Splash/TextView-\u00a9 Saimon))"
+}

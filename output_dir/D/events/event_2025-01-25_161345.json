@@ -1,0 +1,55 @@
+{
+  "tag": "2025-01-25_161345",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "com.example.chatter",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          180,
+          913
+        ],
+        [
+          540,
+          1033
+        ]
+      ],
+      "resource_id": "com.example.chatter:id/newLoginBtn",
+      "checked": false,
+      "text": "Login",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 10,
+      "size": "360*120",
+      "signature": "[class]android.widget.Button[resource_id]com.example.chatter:id/newLoginBtn[text]Login[enabled,,]",
+      "view_str": "f403e75eb3048d1e7b2cca64e3f33c58",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.example.chatter:id/newLoginBtn",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "3",
+      "desc": "<button bound_box=180,913,540,1033>Login</button>"
+    }
+  },
+  "start_state": "2cc490d9ce7b3199b41a4936bd38805f",
+  "stop_state": "2cc490d9ce7b3199b41a4936bd38805f",
+  "event_str": "TouchEvent(state=2cc490d9ce7b3199b41a4936bd38805f, view=f403e75eb3048d1e7b2cca64e3f33c58(LoginPage/Button-Login))"
+}
