@@ -368,6 +368,7 @@ class UtgGreedySearchPolicy(UtgBasedInputPolicy):
         self.__event_trace = ""
         self.__missed_states = set()
         self.__random_explore = False
+        self.already_explored = set()
 
     def generate_event_based_on_utg(self):
         """
@@ -447,9 +448,10 @@ class UtgGreedySearchPolicy(UtgBasedInputPolicy):
 
         # If there is an unexplored event, try the event first
         for input_event in possible_events:
-            if not self.utg.is_event_explored(event=input_event, state=current_state):
+            if not self.utg.is_event_explored(event=input_event, state=current_state) and input_event not in self.already_explored:
                 self.logger.info("Trying an unexplored event.")
                 self.__event_trace += EVENT_FLAG_EXPLORE
+                self.already_explored.add(input_event)
                 return input_event
 
         target_state = self.__get_nav_target(current_state)
@@ -460,10 +462,10 @@ class UtgGreedySearchPolicy(UtgBasedInputPolicy):
                 self.__event_trace += EVENT_FLAG_NAVIGATE
                 return navigation_steps[0][1]
 
-        if self.__random_explore:
-            self.logger.info("Trying random event.")
-            random.shuffle(possible_events)
-            return possible_events[0]
+        # if self.__random_explore:
+        #     self.logger.info("Trying random event.")
+        #     random.shuffle(possible_events)
+        #     return possible_events[0]
 
         # If couldn't find a exploration target, stop the app
         stop_app_intent = self.app.get_stop_intent()

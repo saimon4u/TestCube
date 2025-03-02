@@ -13,9 +13,13 @@ class GeminiAi:
         if GeminiAi._chat is None:
             genai.configure(api_key="AIzaSyDy_VQnRxk5LqrOvEtpdZzxXdM8tIt_0xg")
             model = genai.GenerativeModel("gemini-1.5-flash-latest")
+            credential_content = ""
+            with open(media / "credential.txt", "r") as f:
+                credential_content += f.read()
+            _system_prompt = f'You are an android input test case generator tool called Testcube. Your work is to find best input for a input field.I have some existing credential input. Here is the credentials i have. Credentials: \n{credential_content}. Now after every input field found i will give you a prompt. The prompt will look like "Enter your email" / "Enter Password" / "Username" etc. Your work is to find for this prompt what existing credential i should use. My credentials are in key value format. You have to give me the key name only with proper case maintained. If you found something that you previously encountered than replay the previous reponse. Like if you found an example@gmail.com but previously you responded email for "Enter your email" than respond email again or match with existing credential that for which field it is best suited.\nExample:\nCredentials:\nemail: saimon@gmail.com\npass: 12345678\nprompt: Enter your email\nresponse: email\nprompt: Enter Password\nresponse: pass'
             GeminiAi._chat = model.start_chat(
                 history=[
-                    {"role": "user", "parts": "I have some input field in my app. The following field have some text like enter email or enter password. Your work is to find what should i enter email or password or something else. That means i will give you a text you have to find what type of input field is needed. Give me the only field name in all small case letter. If the field name have multiple word use underscore between them. Also give some similar type of field name like for user_name you can generate user_id or uid or something like that. Because we don't know what user uses for that particular field so give me those similar type of name also in csv format all in one line."},
+                    {"role": "user", "parts": _system_prompt},
                 ]
             )
 

@@ -502,7 +502,7 @@ class TouchEvent(UIEvent):
     
 
     def send(self, device):
-        if "Image" in self.view['class']:
+        if self.view and self.view['class'] and "Image" in self.view['class']:
             return True
         if self.view and "Button" in self.view['class'] and self.view['clickable']:
             before = device.take_screenshot()
