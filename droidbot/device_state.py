@@ -426,17 +426,14 @@ class DeviceState(object):
 
         for view_id in enabled_view_ids:
             if self.__safe_dict_get(self.views[view_id], 'editable') and "EditText" in self.views[view_id]['class']:
-                input_list = GeminiAi.getInputDict()
-                chat = GeminiAi.get_chat()
-                view = self.views[view_id]
-                response = chat.send_message(view["text"])
-                field_name_list = response.text.strip().split(",")
-                text = ""
-                for name in field_name_list:
-                    if input_list and name in input_list:
-                        text = input_list[name]
-                        break
-                possible_events.append(SetTextEvent(view=self.views[view_id], text=text))
+                # input_list = GeminiAi.getInputDict()
+                # chat = GeminiAi.get_chat()
+                # view = self.views[view_id]
+                # response = chat.send_message(view["text"])
+                # text = input_list[response.text.strip()]
+                new_event = SetTextEvent(view=self.views[view_id], text='')
+                # print(self.views[view_id])
+                possible_events.append(new_event)
                 touch_exclude_view_ids.add(view_id)
                 # TODO figure out what event can be sent to editable views
                 pass
@@ -455,7 +452,7 @@ class DeviceState(object):
                 possible_events.append(ScrollEvent(view=self.views[view_id], direction="right"))
 
         for view_id in enabled_view_ids:
-            if self.__safe_dict_get(self.views[view_id], 'checkable'):
+            if self.__safe_dict_get(self.views[view_id], 'checkable') and "EditText" not in self.views[view_id]['class']:
                 possible_events.append(TouchEvent(view=self.views[view_id]))
                 touch_exclude_view_ids.add(view_id)
                 touch_exclude_view_ids.union(self.get_all_children(self.views[view_id]))

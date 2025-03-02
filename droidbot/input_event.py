@@ -788,7 +788,20 @@ class SetTextEvent(UIEvent):
         x, y = UIEvent.get_xy(x=self.x, y=self.y, view=self.view)
         touch_event = TouchEvent(x=x, y=y)
         touch_event.send(device)
-        device.view_set_text(self.text)
+
+        from .GeminiAI import GeminiAi
+
+        input_list = GeminiAi.getInputDict()
+        input_string = "".join(input_list.values())
+        if self.view["text"] in input_string:
+            device.view_set_text(self.view["text"])
+            return True
+        # print(input_list)
+        chat = GeminiAi.get_chat()
+        response = chat.send_message(self.view["text"])
+        print(self.view)
+        text = input_list[response.text.strip()]
+        device.view_set_text(text)
         return True
 
     def get_event_str(self, state):
@@ -913,7 +926,7 @@ class ImageComparer:
 
             model = genai.GenerativeModel('gemini-2.0-flash')
             response = model.generate_content([
-                "Describe the key visual differences between these two images. Focus on changes in objects, colors, and overall composition. I am mainly searching if this two page is identical or not. So if you find any type of dissimilarity ans yes otherwise no. By anytype i mean at the app screen not the system bar of the phone. Ans me in only yes or no. Give me response as a json. The json should contain 2 things. For example the dissimilarity is a toast message that contains Password must be 8 character long. So You should create a json like {verditc: fail, response: Password must be 8 character long} here verdict will be the tone of the response like it's negative or positive. Positive means pass and negative means fail. Also if the 2nd image contain a new page image then it should consider as a pass.",
+                "Describe the key visual differences between these two images. Focus on changes in objects, colors, and overall composition. I am mainly searching if this two page is identical or not. So if you find any type of dissimilarity ans yes otherwise no. By anytype i mean at the app screen not the system bar of the phone. Ans me in only yes or no. Give me response as a json. The json should contain 2 things. For example the dissimilarity is a toast message that contains Password must be 8 character long. But if both pages are completely different page in that case consider as a pass. Because the navigation took place. So You should create a json like {verditc: fail, response: Password must be 8 character long} here verdict will be the tone of the response like it's negative or positive. Positive means pass and negative means fail. Also if the 2nd image contain a new page image then it should consider as a pass.",
                 image1,
                 image2
             ])
