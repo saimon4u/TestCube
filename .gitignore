@@ -63,3 +63,4 @@ Gemfile.lock
 documents
 temp
 venv
+output_dir
