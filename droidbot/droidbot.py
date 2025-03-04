@@ -142,6 +142,10 @@ class DroidBot(object):
                 return
             self.device.connect()
 
+            import asyncio
+
+            asyncio.run(self.send_app_data())
+
             if not self.enabled:
                 return
             self.device.install_app(self.app)
@@ -193,6 +197,15 @@ class DroidBot(object):
             import xmlrpc.client
             proxy = xmlrpc.client.ServerProxy(self.input_manager.policy.master)
             proxy.stop_worker(self.device.serial)
+
+    async def send_app_data(self):
+        from .SocketClient import SocketClient
+        await SocketClient.connect()
+        data = {
+            "package_name": self.app.get_package_name(),
+            "app_name": self.app.apk.get_app_name()
+        }
+        SocketClient.send_message('package', data)
 
 
 class DroidBotException(Exception):

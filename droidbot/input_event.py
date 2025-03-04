@@ -501,6 +501,13 @@ class TouchEvent(UIEvent):
         return TouchEvent(x, y)
     
 
+    async def send_test_case(self, test_case):
+        from .SocketClient import SocketClient
+        await SocketClient.connect()
+        SocketClient.send_message("message_from_client", test_case)
+
+    
+
     def send(self, device):
         if self.view and self.view['class'] and "Image" in self.view['class']:
             return True
@@ -523,6 +530,12 @@ class TouchEvent(UIEvent):
             if match:
                 json_str = match.group(0) 
                 parsed_data = json.loads(json_str)
+                
+
+                import asyncio
+                asyncio.run(self.send_test_case(parsed_data))
+
+
                 print('\n\n\n')
                 print(f'Verdict = {parsed_data["verdict"]}')
                 print(f'Response = {parsed_data["response"]}')
@@ -799,7 +812,6 @@ class SetTextEvent(UIEvent):
         # print(input_list)
         chat = GeminiAi.get_chat()
         response = chat.send_message(self.view["text"])
-        print(self.view)
         text = input_list[response.text.strip()]
         device.view_set_text(text)
         return True

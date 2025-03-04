@@ -12,7 +12,7 @@ class GeminiAi:
     @classmethod
     def get_chat(cls):
         if cls._chat is None:
-            genai.configure(api_key="AIzaSyDy_VQnRxk5LqrOvEtpdZzxXdM8tIt_0xg")
+            # genai.configure(api_key="AIzaSyDy_VQnRxk5LqrOvEtpdZzxXdM8tIt_0xg")
             credential_content = ""
             with open(media / "credential.txt", "r") as f:
                 credential_content += f.read()
@@ -24,6 +24,19 @@ class GeminiAi:
             )
         return cls._chat
     
+    @classmethod
+    def generate_random_input(cls):
+        credential_content = ""
+        with open(media / "credential.txt", "r") as f:
+            credential_content += f.read()
+        _system_prompt = f'You are an android input test case generator tool called Testcube. Your work is to simulate mock data to test an android app. I have some existing credentials input for testing. Here is the credentials i have. Credentials:\n{credential_content}. Now you need to create 10 copy of this credentials in json format. For each variation consider empty string, variatiion in gmail format, variation in password length, variation in upper case lower case etc.'
+        chat = cls.__model.start_chat(
+            history = [
+                {"role": "user", "parts": _system_prompt}
+            ]
+        )
+        response = chat.send_message("Generate now")
+        print(response.text)
     @classmethod
     def getInputDict(cls):
         if cls._input is None:
