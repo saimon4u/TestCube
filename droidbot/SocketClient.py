@@ -5,7 +5,7 @@ class SocketClient:
     _connected = False
 
     @classmethod
-    async def connect(cls, server_url='http://localhost:3000'):
+    async def connect(cls, server_url='http://localhost:4000'):
         """Connect to the Socket.IO server"""
         if not cls._connected:
             cls._sio.connect(server_url)
@@ -34,10 +34,4 @@ class SocketClient:
     def register_event(cls, event_name, callback):
         """Register an event listener"""
         cls._sio.on(event_name, callback)
-
-# Example Usage:
-# if __name__ == "__main__":
-#     SocketClient.connect()
-#     SocketClient.send_message('message_from_client', {'msg': 'Hello from Python!'})
-#     SocketClient.disconnect()
 
