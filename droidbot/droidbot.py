@@ -206,7 +206,6 @@ class DroidBot(object):
             "app_name": self.app.apk.get_app_name()
         }
         SocketClient.send_message('package', data)
-        SocketClient.disconnect()
 
 
 class DroidBotException(Exception):
