@@ -504,7 +504,7 @@ class TouchEvent(UIEvent):
     async def send_test_case(self, test_case):
         from .SocketClient import SocketClient
         await SocketClient.connect()
-        SocketClient.send_message("message_from_client", test_case)
+        SocketClient.send_message("test_case", test_case)
 
     
 
@@ -796,6 +796,11 @@ class SetTextEvent(UIEvent):
         self.text = text
         if event_dict is not None:
             self.__dict__.update(event_dict)
+        
+    async def send_input(self, data):
+        from .SocketClient import SocketClient
+        await SocketClient.connect()
+        SocketClient.send_message("input", data)
 
     def send(self, device):
         x, y = UIEvent.get_xy(x=self.x, y=self.y, view=self.view)
@@ -814,6 +819,10 @@ class SetTextEvent(UIEvent):
         response = chat.send_message(self.view["text"])
         text = input_list[response.text.strip()]
         device.view_set_text(text)
+
+        if text:
+            import asyncio
+            asyncio.run(self.send_input({"field": response.text.strip(), "text": text}))
         return True
 
     def get_event_str(self, state):

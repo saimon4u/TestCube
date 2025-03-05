@@ -19,7 +19,7 @@ class SocketClient:
         """Send a message to the Socket.IO server"""
         if not cls._connected:
             cls.connect()
-        cls._sio.emit(event_name, {"test_case": message})
+        cls._sio.emit(event_name, {"data": message})
         print(f"Sent message: {message}")
 
     @classmethod
