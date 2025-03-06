@@ -508,18 +508,18 @@ class TouchEvent(UIEvent):
                 
 
                 import asyncio
-                # asyncio.run(self.send_test_case(parsed_data))
+                asyncio.run(self.send_test_case(parsed_data))
 
 
                 print('\n\n\n')
                 print(f'Verdict = {parsed_data["verdict"]}')
                 print(f'Response = {parsed_data["response"]}')
                 print('\n\n\n')
-                if "Navigation" in parsed_data["response"] or parsed_data['verdict'] == 'fail':
-                    import os, time
-                    device.set_last_known_state()
-                    time.sleep(2)
-                    os.system("adb shell input keyevent KEYCODE_BACK")
+                # if "Navigation" in parsed_data["response"] or parsed_data['verdict'] == 'fail':
+                #     import os, time
+                #     device.set_last_known_state()
+                #     time.sleep(2)
+                #     os.system("adb shell input keyevent KEYCODE_BACK")
                     
             else:
                 print("No JSON found in the text.")
@@ -806,9 +806,9 @@ class SetTextEvent(UIEvent):
             text = ""
         device.view_set_text(text)
 
-        # if text:
-        #     import asyncio
-        #     asyncio.run(self.send_input({"field": response.text.strip(), "text": text}))
+        if text:
+            import asyncio
+            asyncio.run(self.send_input({"field": response.text.strip(), "text": text}))
         
         
         return True
