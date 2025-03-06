@@ -835,6 +835,9 @@ class Device(object):
 
     def get_last_known_state(self):
         return self.last_know_state
+    
+    def set_last_known_state(self):
+        self.last_know_state = None
 
     def view_touch(self, x, y):
         self.adb.touch(x, y)

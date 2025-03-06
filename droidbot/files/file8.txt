@@ -1,0 +1,26 @@
+email: saimon_b@gmail.com
+pwd: Short
+uid: sb
+f_name: S
+l_name: B
+phone: 17011111
+age: 21
+religion: Muslim
+street: 108
+city: Dhaka
+state: Dhanmondi
+postal: 1200
+country: BD
+card: 1111222233334444
+expiry: 11/24
+cvv: 222
+address: Dhaka, BD
+acc_holder_name: S B
+company: IT Firm
+job: Programmer
+exp_year: 1
+salary: 10000
+experience_in_app: Very bad
+suggessions: Lots of improvements
+rating: 0
+comment: Bad
