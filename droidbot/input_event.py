@@ -243,32 +243,7 @@ class EventLog(object):
         self.start_profiling()
         self.event_str = self.event.get_event_str(self.from_state)
         print("Action: %s" % self.event_str)
-        # Screenshot must be taken before sending the event
-        # imgg = self.device.take_screenshot()
-        # print(imgg)
-        # if isinstance(self.event, KillAppEvent) == False:
-        #     if "Button" in self.event.view['class']:
-        #         before = self.device.take_screenshot()
-        #         self.device.send_event(self.event)
-        #         after = self.device.take_screenshot()
-        #         print(before)
-        #         print(after)
-        #         print(self.event)
-        #         print(self.event.view)
-        # else:
-        #     self.device.send_event(self.event)
-        # if isinstance(self.event, TouchEvent):
-        #     if "Button" in self.event.view['class']:
-        #         before = self.device.take_screenshot()
-        #         self.device.send_event(self.event)
-        #         after = self.device.take_screenshot()
-        #         print("Before: %s" % before)
-        #         print("After: %s" % after)
-                
-        #     else:
-        #         self.device.send_event(self.event)
-        # else:
-        #     self.device.send_event(self.event)
+        
         self.device.send_event(self.event)
 
     def start_profiling(self):
@@ -533,13 +508,19 @@ class TouchEvent(UIEvent):
                 
 
                 import asyncio
-                asyncio.run(self.send_test_case(parsed_data))
+                # asyncio.run(self.send_test_case(parsed_data))
 
 
                 print('\n\n\n')
                 print(f'Verdict = {parsed_data["verdict"]}')
                 print(f'Response = {parsed_data["response"]}')
                 print('\n\n\n')
+                if "Navigation" in parsed_data["response"] or parsed_data['verdict'] == 'fail':
+                    import os, time
+                    device.set_last_known_state()
+                    time.sleep(2)
+                    os.system("adb shell input keyevent KEYCODE_BACK")
+                    
             else:
                 print("No JSON found in the text.")
 
@@ -803,6 +784,9 @@ class SetTextEvent(UIEvent):
         SocketClient.send_message("input", data)
 
     def send(self, device):
+        # import os
+        # os.system("adb shell input keyevent KEYCODE_BACK")
+        # return True
         x, y = UIEvent.get_xy(x=self.x, y=self.y, view=self.view)
         touch_event = TouchEvent(x=x, y=y)
         touch_event.send(device)
@@ -818,11 +802,15 @@ class SetTextEvent(UIEvent):
         chat = GeminiAi.get_chat()
         response = chat.send_message(self.view["text"])
         text = input_list[response.text.strip()]
+        if not text:
+            text = ""
         device.view_set_text(text)
 
-        if text:
-            import asyncio
-            asyncio.run(self.send_input({"field": response.text.strip(), "text": text}))
+        # if text:
+        #     import asyncio
+        #     asyncio.run(self.send_input({"field": response.text.strip(), "text": text}))
+        
+        
         return True
 
     def get_event_str(self, state):
@@ -947,7 +935,7 @@ class ImageComparer:
 
             model = genai.GenerativeModel('gemini-2.0-flash')
             response = model.generate_content([
-                "Describe the key visual differences between these two images. Focus on changes in objects, colors, and overall composition. I am mainly searching if this two page is identical or not. So if you find any type of dissimilarity ans yes otherwise no. By anytype i mean at the app screen not the system bar of the phone. Ans me in only yes or no. Give me response as a json. The json should contain 2 things. For example the dissimilarity is a toast message that contains Password must be 8 character long. But if both pages are completely different page in that case consider as a pass. Because the navigation took place. So You should create a json like {verditc: fail, response: Password must be 8 character long} here verdict will be the tone of the response like it's negative or positive. Positive means pass and negative means fail. Also if the 2nd image contain a new page image then it should consider as a pass.",
+                "Describe the key visual differences between these two images. Focus on changes in objects, colors, and overall composition. I am mainly searching if this two page is identical or not. So if you find any type of dissimilarity ans yes otherwise no. By anytype i mean at the app screen not the system bar of the phone. Ans me in only yes or no. Give me response as a json. The json should contain 2 things. For example the dissimilarity is a toast message that contains Password must be 8 character long. But if both pages are completely different page in that case consider as a pass. Because the navigation took place. So You should create a json like {verditc: fail, response: Password must be 8 character long} here verdict will be the tone of the response like it's negative or positive. Positive means pass and negative means fail. Also if the 2nd image contain a new page image then it should consider as a pass and response should be 'Navigation occured'.",
                 image1,
                 image2
             ])

@@ -1,0 +1,26 @@
+email: SAIMON@GMAIL.COM
+pwd: 12345789!
+uid: SAIMON
+f_name: SAIMON
+l_name: BHUIYAN
+phone: +8801701111111
+age: 25
+religion: ISLAM
+street: 108/1A
+city: DHAKA
+state: DHANMONDI
+postal: 1000
+country: BANGLADESH
+card: 987654321098
+expiry: 01/01/2025
+cvv: 789
+address: DHAKA, BANGLADESH
+acc_holder_name: SAIMON BHUIYAN
+company: Microsoft
+job: AI Engineer
+exp_year: 7
+salary: 70000
+experience_in_app: Excellent
+suggessions: More features
+rating: 4
+comment: Great app!

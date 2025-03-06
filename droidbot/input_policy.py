@@ -452,6 +452,8 @@ class UtgGreedySearchPolicy(UtgBasedInputPolicy):
                 self.logger.info("Trying an unexplored event.")
                 self.__event_trace += EVENT_FLAG_EXPLORE
                 self.already_explored.add(input_event)
+                if isinstance(input_event, TouchEvent) and "Button" in input_event.view['class']:
+                    self.utg.add_transition(input_event, current_state, current_state)
                 return input_event
 
         target_state = self.__get_nav_target(current_state)
