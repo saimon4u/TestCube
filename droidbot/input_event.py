@@ -794,10 +794,11 @@ class SetTextEvent(UIEvent):
         from .GeminiAI import GeminiAi
 
         input_list = GeminiAi.generate_random_input()
-        input_string = "".join(input_list.values())
-        if self.view["text"] in input_string or "Enter" not in self.view["text"]:
-            device.view_set_text(self.view["text"])
-            return True
+        if input_list:
+            input_string = "".join(input_list.values())
+            if self.view["text"] in input_string or "Enter" not in self.view["text"]:
+                device.view_set_text(self.view["text"])
+                return True
         # print(input_list)
         chat = GeminiAi.get_chat()
         response = chat.send_message(f'prompt: {self.view["text"]}, {self.get_event_str(device.get_current_state()) if ("Login" or "Sign") in self.get_event_str(device.get_current_state()) else ""}')
