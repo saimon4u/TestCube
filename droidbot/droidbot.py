@@ -146,8 +146,8 @@ class DroidBot(object):
 
             asyncio.run(self.send_app_data())
 
-            # from .GeminiAI import GeminiAI
-            # GeminiAI.generate_random_input()
+            from .GeminiAI import GeminiAi
+            GeminiAi.generate_random_input()
 
             if not self.enabled:
                 return
