@@ -484,7 +484,7 @@ class TouchEvent(UIEvent):
     
 
     def send(self, device):
-        if self.view and self.view['class'] and "Image" in self.view['class']:
+        if self.view and self.view['class'] and ("Button" not in self.view['class'] and "EditText" not in self.view['class']):
             return True
         if self.view and "Button" in self.view['class'] and self.view['clickable']:
             before = device.take_screenshot()
@@ -794,7 +794,7 @@ class SetTextEvent(UIEvent):
         from .GeminiAI import GeminiAi
 
         input_list = GeminiAi.generate_random_input()
-        if input_list:
+        if input_list is not None:
             input_string = "".join(input_list.values())
             if self.view["text"] in input_string or "Enter" not in self.view["text"]:
                 device.view_set_text(self.view["text"])
