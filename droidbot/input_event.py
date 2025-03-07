@@ -795,7 +795,7 @@ class SetTextEvent(UIEvent):
 
         input_list = GeminiAi.generate_random_input()
         if input_list is not None:
-            input_string = "".join(input_list.values())
+            input_string = "".join(map(str, input_list.values()))
             if self.view["text"] in input_string or "Enter" not in self.view["text"]:
                 device.view_set_text(self.view["text"])
                 return True
