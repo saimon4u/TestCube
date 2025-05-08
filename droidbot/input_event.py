@@ -483,6 +483,8 @@ class TouchEvent(UIEvent):
 
     
 
+
+    # Saimon Bhuiyan (SPL2)
     def send(self, device):
         if self.view and self.view['class'] and ("Button" not in self.view['class'] and "EditText" not in self.view['class']):
             return True
@@ -791,6 +793,8 @@ class SetTextEvent(UIEvent):
         touch_event = TouchEvent(x=x, y=y)
         touch_event.send(device)
 
+
+        # Saimon Bhuiyan (SPL2)
         from .GeminiAI import GeminiAi
 
         input_list = GeminiAi.generate_random_input()
@@ -922,6 +926,8 @@ EVENT_TYPES = {
 }
 
 
+
+# Saimon Bhuiyan (SPL2)
 class ImageComparer:
     @staticmethod
     def compareImage(before_image_path, after_image_path):
